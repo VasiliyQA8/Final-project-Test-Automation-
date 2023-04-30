@@ -30,12 +30,18 @@ PyCharm 2022.3.2 (Community Edition), расширение для браузер
 Папка tests:
 
 test_positive_auth_page - тестируем позитивные сценарии страницы авторизации на соответствия требованиям к графическому интерфейсу.
+
 Команды для запуска:
 pytest tests/test_positive_auth_page.py -v -m "ui" - позитивные тесты интерфейса страницы Авторизации
+
 pytest tests/test_positive_auth_page.py -v -m "auth" - позитивные тесты Авторизации в систему
+
 pytest tests/test_positive_auth_page.py -v -m "social_networks" - тесты "войдите с помощью соцсетей"
 
+
 test_negative_auth_page - тестируем негативные сценарии страницы авторизации на несоответствия требованиям, ошибки и сбои.
+
 Команды для запуска:
 pytest tests/test_negative_auth_page.py -v -m "auth" - негативные тесты Авторизации в систему
+
 pytest tests/test_negative_auth_page.py -v -m "not parametrize" - негативные тесты Авторизации в систему без тестов с параметризацией
